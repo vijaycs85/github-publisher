@@ -16,9 +16,10 @@ require_once __DIR__ . '/vendor/autoload.php';
 use Vijaycs85\GithubPublisher\Repository;
 use Vijaycs85\GithubPublisher\Builder;
 
+// Github repository name in username/projectname format.
 $repository = new Repository('vijaycs85/static-site', \getenv('GITHUB_TOKEN'));
 
-// Repository to clone.
+// Pass location of clone.
 $builder = new Builder(__DIR__ . '/build', $repository);
 
 // Directory that contains souce code and branch to push.
