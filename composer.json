@@ -1,0 +1,30 @@
+{
+  "name": "vijaycs855/github-publisher",
+  "type": "project",
+  "description": "Publish files to github.",
+  "license": "MIT",
+  "homepage": "https://github.com/vijaycs85/github-publisher",
+  "authors": [
+    {
+      "name": "Vijaya Chandran Mani",
+      "role": "maintainer",
+      "email": "vijaycs85@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^7.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "Vijaycs85\\GithubPublisher\\": "src"
+    }
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "which git",
+      "which bash",
+      "which curl",
+      "which cp"
+    ]
+  }
+}
