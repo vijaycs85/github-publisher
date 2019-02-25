@@ -1,5 +1,8 @@
 Github Publisher
 ==========================
+Runs CLI commands to clone a github repository and commits the changes and push to given branch. 
+
+WARNING: Executes commands using `exec()`. 
 
 Install
 -------
